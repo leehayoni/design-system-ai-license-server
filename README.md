@@ -20,9 +20,9 @@ Copy `.env.example` to `.env` for local development.
 
 ## LLM Provider
 
-`api/_lib/llm-provider.js` calls Gemini REST (`generateContent`), model `gemini-2.5-flash-lite`. No LLM SDK is installed.
+`api/_lib/llm-provider.js` calls Gemini REST (`generateContent`), model `gemini-3.5-flash-lite`. No LLM SDK is installed.
 
-- Endpoint: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent`
+- Endpoint: `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent`
 - JSON tasks set `generationConfig.responseMimeType` to `application/json`
 - Missing `GEMINI_API_KEY` returns HTTP 503
 - Gemini 429 / quota exhaustion returns HTTP 429 with a retry message
